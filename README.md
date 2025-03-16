@@ -2,7 +2,7 @@
 
 # Overview
 
-AIDX Airdrop Checker is a web application that allows users to check their eligibility for the AIDX token airdrop and register their wallets. The application supports both Avail (Polkadot/Substrate) and EVM (Ethereum) wallets, allowing users to link them together for a consolidated airdrop experience.
+AIDX Airdrop Checker for Avail Mainnet and Deq Stakers.
 
 ## Features
 
