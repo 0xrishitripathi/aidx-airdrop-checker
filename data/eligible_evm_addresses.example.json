@@ -1,0 +1,10 @@
+[
+  {
+    "address": "0xExampleEVMAddress00000000000000000000000000",
+    "tokens": 950
+  },
+  {
+    "address": "0xAnotherExampleEVMAddress0000000000000000000",
+    "tokens": 2500
+  }
+]

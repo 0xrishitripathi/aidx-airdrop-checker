@@ -1,0 +1,13 @@
+{
+  "registered_wallets": [
+    {
+      "avail_address": "5ExamplePolkadotAddressXXXXXXXXXXXXXXXXXXXXXX",
+      "evm_address": "0xExampleEVMAddress00000000000000000000000000",
+      "final_evm_address": "0xExampleEVMAddress00000000000000000000000000",
+      "tokens": 2950,
+      "timestamp": "2025-03-16T08:18:50.496Z",
+      "avail_signature": "0xExamplePolkadotSignatureXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "evm_signature": "0xExampleEVMSignatureXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    }
+  ]
+}

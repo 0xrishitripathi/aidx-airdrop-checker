@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #000000;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-radius: 12px;
+  --success-color: #000000;
+  --success-bg: #f0f0f0;
+  --font-primary: 'Inter', sans-serif;
+  --button-color: #000000;
+  --button-text: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.15);
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  transform: scale(0.85);
+  transform-origin: top center;
+  position: relative;
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: -1px -1px;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.aidx-logo {
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wallet-management {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.manage-wallets-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  min-width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  margin-right: -270px;
+}
+
+.manage-wallets-button:hover {
+  background-color: #333333;
+  transform: translateY(-1px);
+}
+
+.manage-wallets-button:active {
+  transform: translateY(0);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #000000;
+  line-height: 1.2;
+  width: 100%;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.main-title-outer {
+  margin: 0 auto 45px;
+  padding-top: 90px;
+  text-align: center;
+  width: 100%;
+}
+
+.main-title-text {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  color: #000000;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.login-container::before {
+  display: none;
+}
+
+h1 {
+  color: #000000;
+  font-size: 2.2em;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-family: var(--font-primary);
+  display: block;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.95em;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-family: var(--font-primary);
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+.eligibility-check-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  margin: 20px 0;
+  align-items: flex-start;
+}
+
+.wallet-section {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  min-width: 380px;
+  max-width: 380px;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 250px;
+  gap: 18px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.wallet-section p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.wallet-section .wallet-header-image {
+  width: auto;
+  height: 36px;
+  margin-bottom: 14px;
+  object-fit: contain;
+}
+
+.wallet-section .wallet-header-image[alt="DEQ"] {
+  height: 36px;
+}
+
+.wallet-section h3 {
+  display: none;
+}
+
+.connect-button, .check-button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  transition: all 0.3s ease;
+  margin: 8px 0;
+  box-shadow: var(--box-shadow);
+  letter-spacing: 0.3px;
+}
+
+.connect-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-shadow);
+  background: #222222;
+}
+
+.connect-button.metamask {
+  background: #000000;
+  box-shadow: var(--box-shadow);
+}
+
+.connect-button.metamask:hover {
+  box-shadow: var(--hover-shadow);
+  background: #222222;
+}
+
+.check-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-shadow);
+  background: #222222;
+}
+
+.registration-option {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  margin: 10px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.registration-option p {
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.link-button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 600;
+  transition: all 0.2s;
+  width: auto;
+  margin: 5px 0;
+  font-family: var(--font-primary);
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-shadow);
+  background: #222222;
+}
+
+.error-message {
+  color: #d32f2f;
+  background: rgba(211, 47, 47, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+.success-message {
+  color: #219653;
+  background: rgba(33, 150, 83, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+.eligible-message {
+  color: #219653;
+  background: rgba(33, 150, 83, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+.linking-status {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: var(--font-primary);
+}
+
+.centralized-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.register-wallet-button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+  letter-spacing: 0.3px;
+  text-align: center;
+  width: auto;
+  max-width: none;
+  display: inline-block;
+}
+
+.register-wallet-button:hover {
+  background: #222222;
+  transform: translateY(-3px);
+  box-shadow: var(--hover-shadow);
+}
+
+.register-wallet-button:active {
+  transform: translateY(-1px);
+  box-shadow: var(--box-shadow);
+}
+
+.registration-success {
+  text-align: center;
+  margin: 20px auto;
+  padding: 15px 25px;
+  transform: scale(0.85);
+  transform-origin: top center;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+}
+
+.registration-success-main {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.registration-success-sub {
+  font-size: 1.2em;
+  color: #666;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight-text {
+  font-size: 1.2em;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.airdrop-address {
+  font-size: 1.15em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.registration-success-message {
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.wallet-address-box {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 10px 18px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s ease;
+  cursor: default;
+  font-family: var(--font-primary);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  min-width: 320px;
+  font-size: 15px;
+}
+
+.wallet-address-box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.wallet-address-box p {
+  margin: 0;
+  font-size: 0.7em;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.wallet-section:first-child .wallet-address-box {
+  cursor: pointer;
+}
+
+.wallet-section:first-child .wallet-address-box:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-2px);
+}
+
+.address-selector-icon {
+  position: absolute;
+  right: 12px;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.8;
+}
+
+/* Account selector styling */
+.account-selector {
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--hover-shadow);
+  z-index: 100;
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.account-list {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.other-accounts-label {
+  font-size: 0.85em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 8px;
+}
+
+.account-option {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.account-option:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.account-option span {
+  font-size: 0.9em;
+  color: #000000;
+  font-weight: 500;
+}
+
+.selector-address {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 4px;
+}
+
+.account-option:last-child {
+  margin-bottom: 0;
+}
+
+.account-option.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.account-option p {
+  margin: 0;
+  font-size: 0.85em;
+  color: #000000;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.account-option small {
+  display: block;
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 4px;
+}
+
+/* Wallet Management Styles */
+.wallet-management {
+  position: relative;
+  z-index: 15;
+}
+
+.wallet-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: -270px;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  min-width: 280px;
+  box-shadow: var(--box-shadow);
+  z-index: 30;
+}
+
+.wallet-menu-section {
+  margin-bottom: 24px;
+}
+
+.wallet-menu-section:last-child {
+  margin-bottom: 0;
+}
+
+.wallet-menu-title {
+  font-size: 0.95em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.wallet-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wallet-menu-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.wallet-menu-item button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-menu-item button:hover {
+  transform: translateY(-1px);
+  background: #222222;
+}
+
+.wallet-address {
+  font-size: 0.95em;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: #000000;
+}
+
+.account-list {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.other-accounts-label {
+  font-size: 0.85em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.account-option {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.account-option:last-child {
+  margin-bottom: 0;
+}
+
+.account-option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.account-option span {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #000;
+}
+
+.selector-address {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.wallet-menu .wallet-address {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .wallet-section {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .aidx-logo {
+    margin-left: 0;
+    height: 140px;
+  }
+  
+  .main-title-outer {
+    padding-top: 70px;
+  }
+  
+  .main-title-text {
+    font-size: 2.2em;
+  }
+  
+  .wallet-menu {
+    right: 0;
+    min-width: 260px;
+  }
+  
+  .eligibility-check-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wallet-section {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    padding: 25px 20px;
+  }
+  
+  .wallet-section p {
+    white-space: normal;
+  }
+  
+  .manage-wallets-button {
+    margin-right: 0;
+  }
+}
+
+.wallet-disconnect-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.wallet-disconnect-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Enhanced wallet menu styling */
+.wallet-menu-section {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.wallet-menu-title {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px 0;
+  text-align: left;
+}
+
+.other-accounts-label {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 8px 0 5px 0;
+  text-align: left;
+}
+
+.account-list {
+  margin-top: 10px;
+}
+
+.wallet-menu .account-option {
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-menu .account-option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wallet-menu .account-option span {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #000;
+}
+
+.wallet-menu .selector-address {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.wallet-menu .wallet-address {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+/* Success notification styling */
+.success-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 80%;
+  max-width: 500px;
+}
+
+.success-notification .success-message {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+.success-notification .success-message p {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9em;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wallet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  transform: scale(0.85);
+  transform-origin: top center;
+}
+
+.wallet-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  min-width: 400px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 180px;
+  position: relative;
+  height: auto;
+  align-self: start;
+  flex: 1;
+  max-width: 400px;
+  margin: 0 14px;
+}
+
+.connected-address {
+  font-size: 0.75em;
+  word-break: break-all;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 5px 0;
+  font-family: monospace;
+  color: #333;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+}
+
+.wallet-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.wallet-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.wallet-status-text {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.wallet-box .connect-button,
+.wallet-box .disconnect-button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.no-wallets-message {
+  font-style: italic;
+  color: #888888;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .aidx-logo {
+    margin-left: 0;
+    height: 140px;
+  }
+  
+  .manage-wallets-button {
+    margin-right: 0;
+  }
+}
+
+/* Checking message styling */
+.checking-message {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Eligibility result styling */
+.eligibility-result-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility-message {
+  font-size: 15px;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eligibility-message p {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.success-message {
+  color: #00cc00;
+  font-weight: bold;
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00cc00;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.error-message {
+  color: #cc0000;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #cc0000;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.register-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 280px;
+}
+
+.register-button {
+  padding: 12px 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.checking-eligibility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* FAQ Styles */
+.faq-section {
+  max-width: 920px;
+  width: 100%;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+}
+
+.faq-title {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+.faq-question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+
+.faq-question-text {
+  flex: 1;
+}
+
+.faq-toggle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.faq-toggle::before {
+  content: "›";
+  transform: rotate(90deg);
+  display: block;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle::before {
+  transform: rotate(-90deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 20px 20px;
+}
+
+.faq-answer a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.faq-answer a:hover {
+  opacity: 0.8;
+}

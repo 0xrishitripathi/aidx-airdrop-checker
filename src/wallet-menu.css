@@ -1,0 +1,41 @@
+/* Enhanced Wallet Menu Styles */
+.wallet-menu-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 5px 0;
+}
+
+.wallet-address {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-all;
+  color: #333;
+}
+
+.no-wallets-message {
+  color: #6c757d;
+  margin: 4px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wallet-menu-item button {
+  align-self: flex-end;
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.wallet-menu-item button:hover {
+  background-color: #dc3545;
+  color: white;
+}

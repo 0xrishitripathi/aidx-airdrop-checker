@@ -1,0 +1,33 @@
+.centralized-registration {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.register-wallet-button {
+  background: linear-gradient(135deg, #1d976c, #93f9b9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.register-wallet-button:hover {
+  background: linear-gradient(135deg, #1a8d63, #7deca1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.register-wallet-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

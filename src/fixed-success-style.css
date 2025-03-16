@@ -1,0 +1,49 @@
+.registration-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: rgba(240, 255, 240, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  border: 1px solid rgba(179, 217, 179, 0.5);
+  box-shadow: 0 0 15px rgba(44, 122, 44, 0.2);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(44, 122, 44, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(44, 122, 44, 0.4);
+  }
+}
+
+.registration-success .success-message {
+  color: #1d976c;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(29, 151, 108, 0.3);
+}
+
+.registration-success .airdrop-address {
+  color: #2c7a7b;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.highlighted-address {
+  font-family: monospace;
+  background-color: rgba(240, 255, 240, 0.5);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 600;
+  color: #1a8d63;
+  border: 1px solid rgba(179, 217, 179, 0.4);
+  box-shadow: 0 0 8px rgba(29, 151, 108, 0.2);
+}
